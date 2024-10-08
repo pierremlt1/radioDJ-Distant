@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/borne.css">
+    <link rel="shortcut icon" href="../data/logo.jpg" type="image/x-icon">
+    <title>Borne Radio DJ</title>
+</head>
+<body>
+    <header>
+        <img src="../data/logo.jpg" alt="">
+        <div id="titreEnCoursDiv">
+            <span id="titreEnCours">Titre en cours depuis le diffuseur</span>
+            <span id="tempsRestant">00:00:00</span>
+        </div>
+    </header>
+    <main>
+        <form id="formulaire" action="../php/borne.php" method="post">
+            <input id="input" type="number" name="track_id" required placeholder="Saisir ID" min="1" step="1">
+            <button id="envoie" type="submit">Charger</button>
+        </form>
+    </main>
+    <script src="../js/borne.js"></script>
+    <script src="../js/titreEnCours.js"></script>
+</body>
+</html>

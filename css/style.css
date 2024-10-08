@@ -1,0 +1,200 @@
+*{
+    background-color: #011627;
+    color: #f6f7f8;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#logoTop{
+    height: 100px;
+}
+#titreEnCours{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+#status{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 100px;
+}
+#autoDJ{
+    background-color: #EBF5FB;
+    color: #1B4F72;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+#automatique{
+    background-color: #EBF5FB;
+    color: #1B4F72;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+#info{
+    display: none;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 100%;
+    margin-top: 30px;
+}
+#diffuseur{
+    width: 50%;
+}
+#utilitaires{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#utilitaires img{
+    width: 100px;
+    background-color: #EBF5FB;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#cartouchier{
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    margin-right: 50px;
+}
+#voieA, #voieB, #voieC{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+.cart{
+    padding: 30px;
+    border: transparent 1px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #20A4F3;
+    transition: all 0.5s;
+}
+#cart1,#cart4,#cart7{
+    margin-top: 0px;
+}
+.cart:hover{
+    box-shadow: 0px 0px 45px -2px #FF3366, 0px 0px 45px -2px #FF3366;
+    background-color: #FF3366;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.h3Cart{
+    background-color: transparent;
+    color: #011627;
+    font-size: 20px;
+    font-weight: bold;
+}
+#playDiv{
+    padding: 10px;
+    border: transparent 1px;
+    border-radius: 10px;
+    background-color: #20A4F3;
+    transition: all 0.5s;
+    margin-left: 10px;
+    margin-right: 70px;
+    text-align: center;
+    cursor: pointer;
+}
+#playDiv:hover{
+    box-shadow: 0px 0px 45px -2px #FF3366, 0px 0px 45px -2px #FF3366;
+    background-color: #FF3366;
+    transition: all 0.5s;
+}
+#playButton{
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 18px;
+    color: #011627;
+}
+#borneLink{
+    padding: 10px;
+    border: transparent 1px;
+    border-radius: 10px;
+    background-color: #20A4F3;
+    transition: all 0.5s;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 70px;
+    text-align: center;
+    cursor: pointer;
+}
+#borneLink:hover{
+    box-shadow: 0px 0px 45px -2px #2EC4B6, 0px 0px 45px -2px #2EC4B6;
+    background-color: #2EC4B6;
+    transition: all 0.5s;
+}
+#borneLink a{
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 18px;
+    color: #011627;
+}
+#playlist{
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.gauche{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.centre{
+    margin-left: 10px;
+}
+.song {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    height: 50px;
+    padding: 10px;
+}
+.current {
+    border: solid 10px red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 0px;
+}
+.remaining{
+    font-size: 20px;
+}
+.logodiffimg{
+    height: 50px;
+}
+
+@media (max-width: 1050px) {
+    main{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+    #info{
+        display: block;
+    }
+    footer{
+        display: none;
+    }
+  }
+  

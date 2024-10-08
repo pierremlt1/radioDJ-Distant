@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./data/logo.jpg" type="image/x-icon">
+    <title>Radio DJ Distant</title>
+</head>
+<body>
+    <h1 id="info">Votre écran est trop petit pour l'interface ! <br> Il doit y avoir plus de 1050px de largeur.</h1>
+    <header>
+        <img id="logoTop" src="./data/logo.jpg" alt="votre logo">
+        <span id="titreEnCours">Titre en cours depuis le diffuseur</span>
+        <div id="status">
+            <span id="autoDJ">ON / OFF</span>
+            <span id="automatique">ON / OFF</span>
+        </div>
+    </header>
+    <button id="checkConnectionBtn">Charger la Diffusion (pour Safari)</button>
+    <main>
+        <div id="diffuseur">
+            <div id="playlist"></div>
+        </div>
+            <div id="cartouchierDiv">
+                <div id="cartouchier">
+                    <div id="voieA">
+                        <div id="cart1" class="cart">
+                            <h3 class="h3Cart">Play cart 1</h3>
+                        </div>
+                        <div id="cart2" class="cart">
+                            <h3 class="h3Cart">Play cart 2</h3>
+                        </div>
+                        <div id="cart3" class="cart">
+                            <h3 class="h3Cart">Play cart 3</h3>
+                        </div>
+                    </div>
+                    <div id="voieB">
+                        <div id="cart4" class="cart">
+                            <h3 class="h3Cart">Play cart 4</h3>
+                        </div>
+                        <div id="cart5" class="cart">
+                            <h3 class="h3Cart">Play cart 5</h3>
+                        </div>
+                        <div id="cart6" class="cart">
+                            <h3 class="h3Cart">Play cart 6</h3>
+                        </div>
+                    </div>
+                    <div id="voieC">
+                        <div id="cart7" class="cart">
+                            <h3 class="h3Cart">Play cart 7</h3>
+                        </div>
+                        <div id="cart8" class="cart">
+                            <h3 class="h3Cart">Play cart 8</h3>
+                        </div>
+                        <div id="cart9" class="cart">
+                            <h3 class="h3Cart">Play cart 9</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="playDiv">
+                    <h3 id="playButton">Play</h3>
+                </div>
+                <div id="borneLink">
+                    <a href="./html/borne.html" target="_blank" >Borne Radio DJ</a>
+                </div>
+            </div>
+    </main>
+    <script src="./js/dj.js"></script>
+    <script src="./js/assister.js"></script>
+    <script src="./js/diffuseur.js"></script>
+    <script src="./js/liaison.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+</html>

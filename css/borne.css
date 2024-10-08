@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #011627;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    color: #F6F7F8;
+}
+header img{
+    height: 150px;
+}
+#titreEnCoursDiv{
+    display: flex;
+    flex-direction: column;
+}
+#titreEnCours{
+    margin: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+#tempsRestant{
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+#formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#input{
+    height: 70px;
+    width: 200px;
+    border: none transparent;
+    border-radius: 8px 8px 0px 0px;
+    background-color: #F6F7F8;
+    color: #011627;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
+#envoie{
+    height: 30px;
+    width: 204px;
+    border: none transparent;
+    border-radius: 0px 0px 8px 8px;
+    background-color: #2EC4B6;
+    color: #011627;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+}
